@@ -1,0 +1,97 @@
+.top-side {
+    display: flex;
+    justify-content: center;
+}
+
+.pos-h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+}
+
+button, a {
+    background-color: #000;
+    font-size: 1.5em;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: double;
+    cursor: pointer;
+}
+
+button:active, a:active{
+    background-color: #fff;
+    color: #000;
+}
+
+ /* After button click */
+#darken {
+    background: rgba(102, 102, 102, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  #window {
+    width: 18em;
+    height: 10em;
+    text-align: center;
+    padding: 1em;
+    border-radius: 1em;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #000;
+    font-size: 1.25em;
+  }
+  #darken:target {display: block;}
+  .close {
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 100em;
+    color: #ff0000;
+    padding: 0 0.18em;
+    /* margin-left: 9.9em; */
+    position: relative;
+    right: 10.3em;
+    bottom: 0.5em;
+    text-decoration: none;
+    background: #ff0000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    cursor:pointer;
+  }
+  .close:hover {
+    background: #ff0000;
+    color: #000
+  }
+
+ /* New data  */
+input {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+
+.add {
+    font-size: 1em;
+    position: relative;
+    top: 2em;
+    left: 5em;
+    border: 1px solid #fff;
+}
+
+ /* All the cards */
+.title {
+    font-size: 2em;
+}
+
+.stylus {
+    border: double;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    margin: 1em;
+}
