@@ -23,7 +23,7 @@ button:active, a:active{
 }
 
  /* After button click */
-#darken {
+#darken, #darken2 {
     background: rgba(102, 102, 102, 0.5);
     width: 100%;
     height: 100%;
@@ -32,7 +32,7 @@ button:active, a:active{
     left: 0;
     display: none;
   }
-  #window {
+  #window, #window2 {
     width: 18em;
     height: 10em;
     text-align: center;
@@ -48,27 +48,42 @@ button:active, a:active{
     background: #000;
     font-size: 1.25em;
   }
-  #darken:target {display: block;}
-  .close {
+
+  #window2 {
+    width: 14em;
+    height: 7em;
+  }
+
+  #darken:target, #darken2:target {display: block;}
+  .close, .close2 {
     display: inline-block;
     border: 1px solid #000;
     border-radius: 100em;
     color: #ff0000;
     padding: 0 0.18em;
-    /* margin-left: 9.9em; */
-    position: relative;
-    right: 10.3em;
-    bottom: 0.5em;
     text-decoration: none;
     background: #ff0000;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    cursor:pointer;
+    cursor: pointer;
+    position: relative;
+   
   }
-  .close:hover {
+
+  .close {
+    right: 10.5em;
+    bottom:0.5em;
+  }
+
+  .close2 {
+    right: 11.7em;
+    bottom:1.7em;
+  }
+
+  .close:hover, .close2:hover {
     background: #ff0000;
     color: #000
   }
+
 
  /* New data  */
 input {
@@ -77,10 +92,13 @@ input {
 }
 
 .add {
-    font-size: 1em;
     position: relative;
     top: 2em;
     left: 5em;
+}
+
+.add, .yes, .no {
+    font-size: 1em;
     border: 1px solid #fff;
 }
 
@@ -94,4 +112,20 @@ input {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5em;
     margin: 1em;
+}
+
+.del {
+    border: double;
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+del:active:hover {
+    background-color: #ff0000;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5em;
 }
